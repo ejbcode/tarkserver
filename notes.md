@@ -1,8 +1,8 @@
 # Backend
 
     `npm init`
-    npm -D nodemon
-    npm i express mongoose dotenv
+    npm i express mongoose
+    npm -D nodemon dotenv
 
 create a index.js in the root
 create this two scripts in the package.json
@@ -19,7 +19,7 @@ const app = express();
 // config a default fallback for the port
 const PORT = process.env.PORT || 4000;
 
-//DEine the app page with the router, justo to know it's working
+//define the app page with the router, justo to know it's working
 app.get("/", (req, res) => {
   res.send("Hello World");
 });
