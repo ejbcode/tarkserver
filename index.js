@@ -17,6 +17,7 @@ const PORT = process.env.PORT || 4000;
 app.use("/api/users", require("./routes/user"));
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/project", require("./routes/project"));
+app.use("/api/task", require("./routes/task"));
 
 //DEine the app page with the router, justo to know it's working
 app.get("/", (req, res) => {

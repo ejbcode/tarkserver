@@ -33,7 +33,7 @@ exports.authUser = async (req, res) => {
       payload,
       process.env.SECRET,
       {
-        expiresIn: 3600,
+        expiresIn: 360000000,
       },
       (error, token) => {
         if (error) throw error;
